@@ -1,88 +1,113 @@
 ---
 layout: post
-title: first post
-image: 
-  path: /assets/img/blog/jeremy-bishop@0,5x.jpg
+title: First Post
 description: >
-  Version 9 is the most complete version of Hydejack yet.
-  Modernized design, big headlines, and big new features.
+  Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
 sitemap: false
+hide_last_modified: true
 ---
 
-Version 9 is the most complete version of Hydejack yet.
-{:.lead}
+Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
 
-[Modernized](#linking-in-style) [design](#whats-in-the-cards), [big headlines](#ready-for-the-big-screen), big new features: [Built-In Search](#built-in-search), [Sticky Table of Contents](#sticky-table-of-contents), and [Auto-Hiding Navbar](#auto-hiding-navbar). That [and more](#and-much-more) is Hydejack 9.
+> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
 
-- Table of Contents
-{:toc .large-only}
+Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
 
-## Linking in Style
+## Inline HTML elements
 
-Ever since the introduction of Dark Mode, link styles have been a bit of an issue. Specifically, finding an accent color that worked on both light and dark backgrounds was the problem. With Hydejack 9, the [link style](#linking-in-style) has been revamped so that legibility is no longer tied to the choice of accent_color, giving you much more freedom in creating a unique design flavor for your site.
- 
-## Ready for the Big Screen
+HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
 
-The theme on which Hydejack is based was designed for a different era of the web. Hydejack has inherited many of its limitations, but over time I've made adjustments, such as centering the content column for better reading ergonomics. 
+- **To bold text**, use `**To bold text**`.
+- *To italicize text*, use `*To italicize text*`.
+- Abbreviations, like HTML should be defined like this `*[HTML]: HyperText Markup Language`.
+- Citations, like <cite>&mdash; Mark otto</cite>, should use `<cite>`.
+- ~~Deleted~~ text should use `~~deleted~~` and <ins>inserted</ins> text should use `<ins>`.
+- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
 
-With version 9, Hydejack takes full advantage of large displays. Whether it's design indulgences such as oversized headlines, or quality of life improvements such as a floating table of contents, Hydejack now finds use for all that extra screen real estate[^1]. 
- 
-## What's in the Cards?
+Most of these elements are styled by browsers with few modifications on our part.
 
-Hydejack 9 now lets you use content cards for both projects and posts. 
-The cards have been redesigned with a new hover style and drop shadows and they retain their unique transition-to-next-page animations, which now also work on the `blog` layout. The new `grid` layout lets you do that.
+## Heading 2
+Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
 
-Good images are key to making the most out of content cards. For that reason, a [chapter on images](../../docs/basics.md#adding-images) has been added to the documentation.
- 
-## Built-In Search
+### Heading 3
+Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor.
 
-Hydejack now has Built-In Search. It even works offline. I've been prototyping many approaches and eventually settled on a fully client-side, off-the-main thread solution that perfectly fits the use case of personal sites and shows surprisingly good results[^2]. 
+#### Heading 4
+Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor.
 
-The new search UI is custom made for Hydejack and shows beautiful previews of your posts and pages, right on top of your regular content.
+##### Heading 5
+Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor.
 
-Together with the Auto-Hiding Navbar, your entire content library is now only a couple of keystrokes away.
- 
-## Auto-Hiding Navbar
+###### Heading 6
+Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor.
 
-A navbar that's there when you need it, and disappears when you don't. Simple as that.
- 
-## Sticky Table of Contents
+## Code
 
-Already a staple on so many sites on the web, this pattern is now also available in Hydejack. 
-What's unique about it is that it simply picks up the table of contents already created by kramdown's `{:toc}` tag and transparently upgrades it to a fully dynamic version.
- 
-## …and much more
+Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
 
-Other noteworthy changes include:
-- Support for Jekyll 4
-- Choice between MathJax and KaTeX for math rendering
-- Use of `jekyll-include-cache` for drastically improved page building speeds
-- New variables configuration file — adjust content width, sidebar width, font size, etc...
-- ...and the option to disable grouping projects by year.
+~~~js
+// Example can be run directly in your JavaScript console
 
-Read the the [CHANGELOG](../../CHANGELOG.md){:.heading.flip-title} for the full scope of features and improvements made in Hydejack 9.
-Maybe just glance at it to confirm that it is indeed a pretty long list.
- 
-## Even More to Come
+// Create a function that takes two arguments and returns the sum of those
+// arguments
+var adder = new Function("a", "b", "return a + b");
 
-New features for 9.1 are already lined up. Code block headers and code line highlights for even better technical blogging, as well as download buttons on the resume page for PDF, vCard, and Resume JSON are just around the corner.
- 
-## Get It Now
-The Free Version of Hydejack is now availabe on [RubyGems](https://rubygems.org/gems/jekyll-theme-hydejack)
-and for the first time also on [GitHub Packages](https://github.com/hydecorp/hydejack/packages). 
-The source code is available on [GitHub](https://github.com/hydecorp/hydejack) as always.
+// Call the function
+adder(2, 6);
+// > 8
+~~~
 
-The PRO Version is scheduled to release on July 7th on Gumroad. Pre-Orders are open now:
+## Lists
 
-<div class="gumroad-product-embed" data-gumroad-product-id="nuOluY"><a href="https://gumroad.com/l/nuOluY">Loading…</a></div>
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
 
+* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+* Donec id elit non mi porta gravida at eget metus.
+* Nulla vitae elit libero, a pharetra augue.
 
+Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
 
-[^1]: If you are a fan of the old two-column layout, or don't like modern design tropes such as mega headlines, Hydejack lets you revert these changes on a case-by-case basis via configuration options.
+1. Vestibulum id ligula porta felis euismod semper.
+2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+3. Maecenas sed diam eget risus varius blandit sit amet non magna.
 
-[^2]:
-      Search was mainly tested for English and German. Please let me know about issues in other languages. 
-      While I've tried to find a multi-language solution, most showed drastically worse  results for the English base case.
-      If you're technically inclined, you can adopt the code located in `_includes/js/search-worker.js` to your needs.
+Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
 
+HyperText Markup Language (HTML)
+: The language used to describe and define the content of a Web page
 
+Cascading Style Sheets (CSS)
+: Used to describe the appearance of Web content
+
+JavaScript (JS)
+: The programming language used to build advanced Web sites and applications
+
+Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
+
+## Images
+
+Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
+
+![800x400](https://via.placeholder.com/800x400 "Large example image")
+
+![400x200](https://via.placeholder.com/400x200 "Medium example image")
+
+![200x200](https://via.placeholder.com/200x200 "Small example image")
+
+## Tables
+
+Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+| Name     | Upvotes   | Downvotes |
+|:---------|:----------|:----------|
+| Alice    |        10 |        11 |
+| Bob      |         4 |         3 |
+| Charlie  |         7 |         9 |
+|==========|===========|===========|
+|Totals    |        21 |        23 |
+
+Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
+
+*[HTML]: HyperText Markup Language
+*[CSS]: Cascading Style Sheets
+*[JS]: JavaScript
