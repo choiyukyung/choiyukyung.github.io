@@ -8,7 +8,8 @@ author1:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    2023년 2월 목표: 백준 gold 달성하기 |
+    2023년 2월 목표: 백준 gold 달성하기
+    |
     알고리즘과 JSP 공부합니다.
 
   # This photo will be used in the about section
